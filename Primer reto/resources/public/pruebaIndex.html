@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<!--
+-->
+<html>
+
+<head>
+    <title>Bolsa de Valores AREP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Si todo salió bien, entonces debemos ver la bolsa de valores de AREP. Eso lo trajo el servidor</h1>
+<h3>Deme el acronimo de la empresa para buscarla:</h3>
+<label for="name">Name:</label><br>
+<input type="text" id="empresa" name="name" placeholder="Example:MSFT"><br><br>
+
+<div id="actionAPI" style="margin-bottom: 1rem;">
+    <input type="button" id ="alpha" value="alpha"  onclick="setValueAPI('alpha')">
+    <input type="button" id ="polygon" value="polygon" onclick="setValueAPI('polygon')">
+</div>
+
+<div>
+    <input type="button" id ="intra" value="Intraday"  onclick="Loading_Per_Date('minute')">
+    <input type="button" id ="daily" value="Daily" onclick="Loading_Per_Date('day')">
+    <input type="button" id ="week" value="Weekly" onclick="Loading_Per_Date('week')">
+    <input type="button" id ="month" value="Monthly" onclick="Loading_Per_Date('month')">
+</div>
+
+<pre id="allInfo"></pre>
+
+
+</body>
+
+</html>
+
